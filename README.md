@@ -16,10 +16,10 @@ A simple notifcation service that was created for a system to send notifications
 
 - Subscribe a client to receive notifications:
 
-* curl -X POST -H "Content-Type: application/json" -d '{"endpoint": "example-endpoint", "keys": {"p256dh": "example-p256dh", "auth": "example-auth"}}' http://localhost:3000/subscribe
+curl -X POST -H "Content-Type: application/json" -d '{"endpoint": "example-endpoint", "keys": {"p256dh": "example-p256dh", "auth": "example-auth"}}' http://localhost:3000/subscribe
 
 
 - Send a notification:
 
 
-* curl -X POST -H "Content-Type: application/json" -d '{"message": "Hello, subscribers!"}' http://localhost:3000/send-notification
+curl -X POST -H "Content-Type: application/json" -d '{"message": "Hello, subscribers!"}' http://localhost:3000/send-notification
